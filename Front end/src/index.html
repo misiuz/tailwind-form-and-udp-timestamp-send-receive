@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+</head>
+<body class="flex justify-center bg-cyan-100 ">
+  <form action="./" method="post" class="my-10 mx-4 min-w-[75%] "> 
+      <label for="hub" class="flex p-3 bg-slate-50 outline outline-1 outline-gray-200 rounded-t-xl ">
+        <input type="radio" name="job" id="hub" value="hub" class="md:m-auto peer" >
+        <div class="grow pl-2 peer-[:checked_&]:text-blue-600 grid md:grid-cols-3">
+            <p class="font-semibold">Hub</p>
+            <p class="font-semibold md:text-center">$0.01/mo <span class="font-normal">($000/yr)</span></p>
+            <p class="md:text-end">Work as hub</p>
+        </div>
+    </label>
+
+    <label for="simple_switch" class="flex justify-between p-3 bg-slate-50 outline outline-1 outline-gray-200 ">
+        <input type="radio" name="job" id="simple_switch" value="simple_switch" class=" md:m-auto peer">
+        <div class="grow  pl-2 peer-[:checked_&]:text-blue-600 grid md:grid-cols-3">
+            <p class="font-semibold">Simple Switch</p>
+            <p class="font-semibold md:text-center">$0.02/mo <span class="font-normal">($001/yr)</span></p>
+            <p class="md:text-end">Work as switch</p>
+        </div>
+      </label>
+
+      
+      <label for="management_switch" class="flex justify-between p-3 bg-slate-50 outline outline-1 outline-gray-200 rounded-b-xl ">
+        <input type="radio" name="job" id="management_switch" value="management_switch" class="md:m-auto peer">
+        <div class="grow pl-2 peer-[:checked_&]:text-blue-600 grid md:grid-cols-3">
+            <p class="font-semibold">Management Switch</p>
+            <p class="font-semibold md:text-center">$0.03/mo <span class="font-normal">($002/yr)</span></p>
+            <p class="md:text-end">VLAN, SNMP, Part Mirroring, etc</p>
+        </div>
+    </label>
+  </form>
+
+    <div class="absolute right-4 bottom-4" id="notificationContainer">
+    
+    </div>
+    
+    <script src="./script.js"></script>
+  </body>
+</html>
